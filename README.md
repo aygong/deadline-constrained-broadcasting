@@ -27,7 +27,6 @@ You can reproduce our experiments using **MATLAB R2021a** on your local machine.
     ```
     git clone https://github.com/aygong/PomdpBroadcast.git
     ```
-  
 - Last, run the provided scripts `main_without_retran.m` or `main_with_retran.m` with `Run`.
 
 
