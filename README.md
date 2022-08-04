@@ -23,10 +23,11 @@ You can reproduce our experiments using **MATLAB R2021a** on your local machine.
 
 - Second, make sure the structure of the folder is the same as in the **Folder Structure** section.
   - `git clone` our repo to your local machine and then move the code to the folder.
+  
     ```
     git clone https://github.com/aygong/PomdpBroadcast.git
     ```
-
+  
 - Last, run the provided scripts `main_without_retran.m` or `main_with_retran.m` with `Run`.
 
 
