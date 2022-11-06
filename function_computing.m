@@ -1,4 +1,4 @@
-function [transF, rewards, obserF] = function_computing()
+function [transF,rewards,obserF] = function_computing()
 % Compute the MDP and POMDP functions
 % Declare global variables
 % See main_without_retran.m
