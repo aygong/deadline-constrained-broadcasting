@@ -21,7 +21,7 @@ global states num_state initial_belief actions num_action
 % obserF: the observation function
 global transF rewards obserF
 
-delta_p = 1e-4;
+delta_p = 1e-2;
 NE = 1e+7;
 
 %% Define local variables
@@ -107,7 +107,7 @@ for row = 1:2
         [transF,rewards,obserF] = function_computing();
         
         % Enumerate the numerical results
-        for K = 1:6
+        for K = 1:D
             tdr_heuK_sim(K,col) = real_heuR_sim();
             tdr_staK_sim(K,col) = real_staR_sim();
         end
