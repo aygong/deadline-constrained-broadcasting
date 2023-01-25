@@ -7,25 +7,19 @@
 </div>
 
 
+## Abstract
 
-## Introduction
-
-This paper considers dynamic optimization of random access in deadline-constrained broadcasting with frame-synchronized traffic. Under the non-retransmission setting, we define a dynamic control scheme that allows each active node to determine the transmission probability based on the local knowledge of current delivery urgency and contention intensity (i.e., the number of active nodes). For an idealized environment where the contention intensity is completely known, we develop a Markov Decision Process (MDP) framework, by which an optimal scheme for maximizing the timely delivery ratio (TDR) can be explicitly obtained. For a realistic environment where the contention intensity is incompletely known, we develop a Partially Observable MDP (POMDP) framework, by which an optimal scheme can only in theory be found. To overcome the infeasibility in obtaining an optimal or near-optimal scheme from the POMDP framework, we investigate the behaviors of the optimal scheme for extreme cases in the MDP framework, and leverage intuition gained from these behaviors together with an approximation on the contention intensity knowledge to propose a heuristic scheme for the realistic environment with TDR close to the maximum TDR in the idealized environment. We further generalize the heuristic scheme to support retransmissions. Numerical results are provided to validate our study.
-
+[This paper](https://ieeexplore.ieee.org/document/10025558) considers dynamic optimization of random access in deadline-constrained broadcasting with frame-synchronized traffic. Under the non-retransmission setting, we define a dynamic control scheme that allows each active node to determine the transmission probability based on the local knowledge of current delivery urgency and contention intensity (i.e., the number of active nodes). For an idealized environment where the contention intensity is completely known, we develop a Markov Decision Process (MDP) framework, by which an optimal scheme for maximizing the timely delivery ratio (TDR) can be explicitly obtained. For a realistic environment where the contention intensity is incompletely known, we develop a Partially Observable MDP (POMDP) framework, by which an optimal scheme can only in theory be found. To overcome the infeasibility in obtaining an optimal or near-optimal scheme from the POMDP framework, we investigate the behaviors of the optimal scheme for extreme cases in the MDP framework, and leverage intuition gained from these behaviors together with an approximation on the contention intensity knowledge to propose a heuristic scheme for the realistic environment with TDR close to the maximum TDR in the idealized environment. We further generalize the heuristic scheme to support retransmissions. Numerical results are provided to validate our study.
 
 
 
-## How to Reproduce Our Experiments
+## Configuration
 
 You can reproduce our experiments using **MATLAB R2021a**.
 
-- Clone the repository:
+- Clone the repository: `git clone https://github.com/aygong/PomdpBroadcast.git`
 
-  ```bash
-  git clone https://github.com/aygong/PomdpBroadcast.git
-  ```
-
-- Run `main_without_retran.m` or `main_with_retran.m`.
+- Run the script: `main_without_retran.m` or `main_with_retran.m`
 
 
 
@@ -33,7 +27,7 @@ You can reproduce our experiments using **MATLAB R2021a**.
 ## Folder Structure
 
 ```
-./PomdpBroadcast
+./PomdpBroadcast/
 ├── README.md
 |
 ├── function_computing.m       # Compute the MDP and POMDP functions
@@ -59,10 +53,13 @@ You can reproduce our experiments using **MATLAB R2021a**.
 ## Citation
 
 ```
-@article{gong2021dynamic,
-  title={Dynamic optimization of random access in deadline-constrained broadcasting},
+@ARTICLE{dynamic2023gong,
   author={Gong, Aoyu and Zhang, Yijin and Deng, Lei and Liu, Fang and Li, Jun and Shu, Feng},
-  journal={arXiv preprint arXiv:2108.03176},
-  year={2021}
+  journal={IEEE Trans. Netw. Sci. Eng.},
+  title={Dynamic optimization of random access in deadline-constrained broadcasting},
+  year={2023},
+  volume={},
+  number={},
+  pages={1-15},
 }
 ```
