@@ -49,7 +49,7 @@ parfor ne = 1:NE
                     approx_belief = [M - 1, 1];
                     if approx_belief(1) > 0
                         approx_belief(2) = ...
-                        M * (a - a * p) * (1 - (1 - a * p)^(M-1)) / ((M - 1) * (1 - (1 - a * p)^M));
+                        M * (a - a * p) * (1 - (1 - a * p)^(M - 1)) / ((M - 1) * (1 - (1 - a * p)^M));
                     end
                 end
             else
