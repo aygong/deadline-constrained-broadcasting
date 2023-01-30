@@ -13,7 +13,7 @@ for ai = 1:num_action
     
     parfor ne = 1:NE
         % Simulate the packet arrival
-        % status: 0 (inactive), 1 (active)
+        % status: 0 (inactive), 1 ~ K (active)
         status = K * (rand(1, N) < lambda);
         % Consider an arbitrary node as the tagged node
         tagged_node = randi([1 N]);
