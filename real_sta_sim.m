@@ -6,12 +6,14 @@ global N D lambda sigma NE
 
 % Run independent numerical experiments
 success = zeros(1, NE);
+
 parfor ne = 1:NE
     % Simulate the packet arrival
     % status: 0 (inactive), 1 (active)
     status = rand(1, N) < lambda;
     % Consider an arbitrary node as the tagged node
     tagged_node = randi([1 N]);
+    
     for t = 1:D
         if status(tagged_node) > 0
             % Simulate the random access

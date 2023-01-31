@@ -9,6 +9,7 @@ subframes = subframe_dividing(D, K);
 
 % Run independent numerical experiments
 success = zeros(1, NE);
+
 parfor ne = 1:NE
     % Simulate the packet arrival
     % status_initial: 0 (inactive), 1 (active)
@@ -24,6 +25,7 @@ parfor ne = 1:NE
         subD = subframes(k);
         % Initialize the approximation on the activity belief
         approx_belief = [N - 1, lambda];
+        
         for t = 1:subD
             if status(tagged_node) > 0
                 % Determine the value of transmission probability
@@ -57,6 +59,7 @@ parfor ne = 1:NE
             end
         end
     end
+    
     success(ne) = min(1, sum(subsuccess));
 end
 

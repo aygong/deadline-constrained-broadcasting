@@ -7,6 +7,7 @@ global actions num_action
 
 % Run independent numerical experiments
 tdr_staR_sim = zeros(1, num_action);
+
 for ai = 1:num_action
     p = actions(ai);
     success = zeros(1, NE);
@@ -30,6 +31,7 @@ for ai = 1:num_action
             end
         end
     end
+    
     tdr_staR_sim(ai) = sum(success) / NE / lambda;
 end
 

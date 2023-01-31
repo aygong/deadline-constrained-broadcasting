@@ -61,7 +61,7 @@ switch evaluation_parameter
         sigmas = 0.8:0.04:1;
         disp('-> Choose the packet success rate');
     otherwise
-        disp('-! Wrong value\n');
+        error('Unexpected evaluation parameters.');
 end
 
 for row = 1:2
@@ -87,8 +87,7 @@ for row = 1:2
                 sigma = sigmas(col);
                 fprintf("-> lambda = %.2f, sigma = %.2f\n", lambda, sigma);
             otherwise
-                disp('-! Wrong value\n');
-                break
+                error('Unexpected evaluation parameters.');
         end
         
         % Set the MDP and POMDP

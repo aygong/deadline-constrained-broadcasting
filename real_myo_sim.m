@@ -8,6 +8,7 @@ global transF rewards obserF
 
 % Run independent numerical experiments
 success = zeros(1, NE);
+
 parfor ne = 1:NE
     % Simulate the packet arrival
     % status: 0 (inactive), 1 (active)
@@ -16,6 +17,7 @@ parfor ne = 1:NE
     tagged_node = randi([1 N]);
     % Initialize the activity belief
     belief = initial_belief;
+    
     for t = 1:D
         if status(tagged_node) > 0
             % Determine the value of transmission probability
