@@ -18,6 +18,7 @@ for ai = 1:num_action
         status = K * (rand(1, N) < lambda);
         % Consider an arbitrary node as the tagged node
         tagged_node = randi([1 N]);
+        
         for t = 1:D
             if status(tagged_node) > 0
                 % Simulate the random access
@@ -30,6 +31,7 @@ for ai = 1:num_action
                 break
             end
         end
+        
     end
     
     tdr_staR_sim(ai) = sum(success) / NE / lambda;

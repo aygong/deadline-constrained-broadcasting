@@ -26,6 +26,7 @@ parfor ne = 1:NE
             break
         end
     end
+    
 end
 
 % Compute the TDR performance

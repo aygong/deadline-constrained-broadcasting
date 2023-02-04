@@ -58,6 +58,7 @@ parfor ne = 1:NE
                 break
             end
         end
+        
     end
     
     success(ne) = min(1, sum(subsuccess));
