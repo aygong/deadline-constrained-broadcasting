@@ -6,12 +6,13 @@
 
 <div align="center">
 <p>
-<img src="protocol.jpg" width="500"/>
+<img src="assets/protocol.jpg" width="500"/>
 </p>
 </div>
 <table>
       <tr><td><em>Figure: An example of the working procedure of the dynamic control scheme for N = 8, D = 6.</em></td></tr>
 </table>
+
 
 This paper considers dynamic optimization of random access in deadline-constrained broadcasting with frame-synchronized traffic. Under the non-retransmission setting, we define a dynamic control scheme that allows each active node to determine the transmission probability based on the local knowledge of current delivery urgency and contention intensity (i.e., the number of active nodes). For an idealized environment where the contention intensity is completely known, we develop a Markov Decision Process (MDP) framework, by which an optimal scheme for maximizing the timely delivery ratio (TDR) can be explicitly obtained. For a realistic environment where the contention intensity is incompletely known, we develop a Partially Observable MDP (POMDP) framework, by which an optimal scheme can only in theory be found. To overcome the infeasibility in obtaining an optimal or near-optimal scheme from the POMDP framework, we investigate the behaviors of the optimal scheme for extreme cases in the MDP framework, and leverage intuition gained from these behaviors together with an approximation on the contention intensity knowledge to propose a heuristic scheme for the realistic environment with TDR close to the maximum TDR in the idealized environment. We further generalize the heuristic scheme to support retransmissions. Numerical results are provided to validate our study.
 
