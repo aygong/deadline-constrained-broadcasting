@@ -61,9 +61,9 @@ If you find the code helpful, please consider citing our paper:
 
 ```
 @ARTICLE{dynamic2023gong,
+  title={Dynamic optimization of random access in deadline-constrained broadcasting},
   author={Gong, Aoyu and Zhang, Yijin and Deng, Lei and Liu, Fang and Li, Jun and Shu, Feng},
   journal={IEEE Trans. Netw. Sci. Eng.},
-  title={Dynamic optimization of random access in deadline-constrained broadcasting},
   year={2023},
   volume={},
   number={},
