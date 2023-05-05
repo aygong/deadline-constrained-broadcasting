@@ -31,26 +31,26 @@ You can reproduce our experiments using **MATLAB R2021a**.
 
 ## Folder Structure
 
-```
+```bash
 ./deadline-constrained-broadcasting/
 ├── README.md
 |
-├── function_computing.m       # Compute the MDP and POMDP functions
+├── function_computing.m     # Compute the MDP and POMDP functions
 |
-├── main_without_retran.m      # Compare without retransmissions
-├── idea_opt_ana.m             # Analyze the optimal scheme (idealized)
-├── idea_opt_sim.m             # Simulate the optimal scheme (idealized)
-├── idea_myo_ana.m             # Analyze the myopic scheme (idealized)
-├── idea_myo_sim.m             # Simulate the myopic scheme (idealized)
-├── real_heu_sim.m             # Simulate the proposed heuristic scheme (realistic)
-├── real_sta_ana.m             # Analyze the optimal static scheme (realistic)
-├── real_sta_sim.m             # Simulate the optimal static scheme (realistic)
-├── real_myo_sim.m             # Simulate the myopic scheme (realistic)
+├── main_without_retran.m    # Compare without retransmissions
+├── idea_opt_ana.m           # Analyze the optimal scheme (idealized)
+├── idea_opt_sim.m           # Simulate the optimal scheme (idealized)
+├── idea_myo_ana.m           # Analyze the myopic scheme (idealized)
+├── idea_myo_sim.m           # Simulate the myopic scheme (idealized)
+├── real_heu_sim.m           # Simulate the proposed heuristic scheme (realistic)
+├── real_sta_ana.m           # Analyze the optimal static scheme (realistic)
+├── real_sta_sim.m           # Simulate the optimal static scheme (realistic)
+├── real_myo_sim.m           # Simulate the myopic scheme (realistic)
 |
-├── main_with_retran.m         # Compare with retransmissions
-├── subframe_dividing.m        # Divide a frame into consecutive subframes
-├── real_heuR_sim.m            # Simulate the proposed heuristic scheme (realistic)
-└── real_staR_sim.m            # Simulate the optimal static scheme (realistic)
+├── main_with_retran.m       # Compare with retransmissions
+├── subframe_dividing.m      # Divide a frame into consecutive subframes
+├── real_heuR_sim.m          # Simulate the proposed heuristic scheme (realistic)
+└── real_staR_sim.m          # Simulate the optimal static scheme (realistic)
 ```
 
 
