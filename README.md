@@ -65,8 +65,8 @@ If you find the code helpful, please consider citing our paper:
   author={Gong, Aoyu and Zhang, Yijin and Deng, Lei and Liu, Fang and Li, Jun and Shu, Feng},
   journal={IEEE Trans. Netw. Sci. Eng.},
   year={2023},
-  volume={},
-  number={},
-  pages={1-15},
+  volume={10},
+  number={4},
+  pages={2059-2073},
 }
 ```
